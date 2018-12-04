@@ -19,7 +19,15 @@ public class ScrollingActivity extends AppCompatActivity {
 
     static boolean gender;
     static boolean sport;
-    public static String userAge;
+    static boolean music;
+    static boolean electronics;
+    static boolean art;
+    static boolean cooking;
+    static boolean makeup;
+    static boolean shopping;
+    static boolean gardening;
+    static boolean videoGames;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,13 +63,79 @@ public class ScrollingActivity extends AppCompatActivity {
         });
 
 
-        CheckBox sports = (CheckBox)findViewById(R.id.checkSports);
-        sports.setOnClickListener(new View.OnClickListener() {
+        CheckBox sportBox = (CheckBox)findViewById(R.id.checkSports);
+        sportBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sport = false;
             }
         });
+
+        CheckBox musicBox = (CheckBox)findViewById(R.id.checkMusic);
+        musicBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                music = false;
+            }
+        });
+
+        CheckBox electronicsBox = (CheckBox)findViewById(R.id.checkElectronics);
+        electronicsBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                electronics = false;
+            }
+        });
+
+
+        CheckBox artBox = (CheckBox)findViewById(R.id.checkArt);
+        artBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                art = false;
+            }
+        });
+
+        CheckBox cookingBox = (CheckBox)findViewById(R.id.checkCooking);
+        cookingBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cooking = false;
+            }
+        });
+
+        CheckBox makeupBox = (CheckBox)findViewById(R.id.checkMakeup);
+        makeupBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                makeup = false;
+            }
+        });
+
+        CheckBox shoppingBox = (CheckBox)findViewById(R.id.checkShopping);
+        shoppingBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                shopping = false;
+            }
+        });
+
+        CheckBox gardeningBox = (CheckBox)findViewById(R.id.checkGardening);
+        gardeningBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gardening = false;
+            }
+        });
+
+        CheckBox videoGamesBox = (CheckBox)findViewById(R.id.checkVideoGames);
+        videoGamesBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                videoGames = false;
+            }
+        });
+
 
         final Button submit = (Button)findViewById(R.id.submitBtn);
         submit.setOnClickListener(new View.OnClickListener() {
