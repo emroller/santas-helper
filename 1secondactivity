@@ -1,0 +1,22 @@
+package com.example.emily.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class second extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second);
+
+        TextView gender = findViewById(R.id.displayGender);
+        gender.setText("the gender is: " + gender);
+        TextView sport = findViewById(R.id.displaySport);
+        sport.setText("you are interested in " + sport);
+        TextView age = findViewById(R.id.displayAge);
+        age.setText("you are " + ScrollingActivity.userAge + " years old!!!!!1");
+
+    }
+}
